@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@600&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <h1 class="generate">Generate a <br><span class="colored">random password</span></h1>
+        <p class="subtitle">Never use an insecure password again.</p>
+        <hr>
+        <div class="counter">
+            <p class="Characters" style="margin-left: 40px;">Characters:</p>
+            <button class="counterButton" style="margin-left:10px;" onclick="reduceCount()">-</button>
+            <p id="count"></p>
+            <button class="counterButton" onclick="addCount()">+</button>
+        </div>
+        <button onclick="generate()" class="gen">Generate passwords</button>
+        <button onclick="reset()" class="reset">Reset</button>
+        <div class="first">
+            <div class="rectangle1">
+                <p id="password1" onclick="copy1"></p>
+            </div>
+            <button onclick="copy1()" class="btn1" id="copy1"></button>
+        </div>
+        <div class="second">
+            <div class="rectangle2">
+                <p id="password2" onclick="copy2"></p>
+            </div>
+            <button onclick="copy2()" class="btn2" id="copy2"></button>
+        </div>
+        
+        <script src="script.js"></script>
+    </body>
+</html>
